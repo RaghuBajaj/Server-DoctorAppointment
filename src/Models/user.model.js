@@ -25,6 +25,10 @@ const userSchema = new mongoose.Schema( {
         type: mongoose.Schema.Types.ObjectId,
         ref: "Appointment"
     },
+    password:{
+        type: String,
+        require: [ true, "password is required!"]
+    }
 }, { timestamps: true } )
 
 export const User = mongoose.model("User", userSchema)

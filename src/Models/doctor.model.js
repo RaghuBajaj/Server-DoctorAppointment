@@ -9,6 +9,10 @@ const doctorSchema = new mongoose.Schema( {
         type: String,
         require: true
     },
+    speciality:{
+        type: String,
+        // require: true
+    },
     experience:{
         type: Number,
         require: true
@@ -19,6 +23,9 @@ const doctorSchema = new mongoose.Schema( {
     fees:{
         type: String,
         require: true
+    },
+    address:{
+        type: String,
     },
     appointments:{
         type: mongoose.Schema.Types.ObjectId,
