@@ -1,7 +1,7 @@
-import { asyncHandler } from "../Utils/asyncHandler";
-import { ApiError } from "../Utils/ApiError";
-import { ApiResponse } from "../Utils/ApiResponse";
-import { Doctor } from "../Models/doctor.model";
+import { asyncHandler } from "../Utils/asyncHandler.js";
+import { ApiError } from "../Utils/ApiError.js";
+import { ApiResponse } from "../Utils/ApiResponse.js";
+import { Doctor } from "../Models/doctor.model.js";
 
 const getAllDoctors = asyncHandler( async( req, res ) => {
     const allDoctors = await Doctor.find();
